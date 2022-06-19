@@ -6,10 +6,23 @@
 Console.WriteLine("Please enter the number");
 int num = Convert.ToInt32(Console.ReadLine());
 
+if (num < 0) {
+    num = num * -1;
+}
+else if (num == 0) {
+  Console.WriteLine("The number is 0");  
+}
+
 int count = 0;
 
-while (count <= num)
+while (count < num)
 {
-    Console.Write(count + 1);
-    count++;
+    if (count == (num - 1)) {
+        Console.Write(count + 1);
+        count++;  
+    }
+    else {
+        Console.Write(count + 1 + ", ");
+        count++;
+    }
 }
