@@ -1,4 +1,5 @@
-﻿// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+﻿// Урок 1. Знакомство с языком программирования С#
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
 // 4 -> да
 // -3 -> нет
@@ -7,11 +8,12 @@
 Console.WriteLine("Please enter the number");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num % 2 == 0)
-{
+if (num == 0) {
+    Console.WriteLine("the entered number is 0");
+}
+else if (num % 2 == 0) {
     Console.WriteLine("entered number is even");
 }
-else
-{
-   Console.WriteLine("entered number is odd"); 
+else {
+    Console.WriteLine("entered number is odd"); 
 }
