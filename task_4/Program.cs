@@ -16,7 +16,7 @@ else if (num == 0) {
 
 int count = 0;
 
-while (count <= number)
+while (count <= num)
 {
     if ((count > 0) && (count % 2 == 0))
     {
