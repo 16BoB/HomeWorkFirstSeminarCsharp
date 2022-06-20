@@ -16,14 +16,16 @@ else if (num == 0) {
 
 int count = 0;
 
-while (count < num)
+while (count <= number)
 {
-    if (count == (num - 1)) {
-        Console.Write(count + 1);
-        count++;  
+    if ((count > 0) && (count % 2 == 0))
+    {
+        Console.Write(count + "  ");
+        count++;
     }
-    else {
-        Console.Write(count + 1 + ", ");
+    else
+    {
         count++;
     }
 }
+
